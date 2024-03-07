@@ -1,0 +1,164 @@
+<section id="proyects" class="proyects">
+  <div class="container">
+    <h2>PROYECTOS</h2>
+    <div class="container-cards">
+      <div class="card">
+        <div class="image">
+          <img src="../../public/images/435shots_so.png" alt="proyect" />
+        </div>
+        <div class="text">
+          <h3>Sistema de Registro de Asistencia</h3>
+          <p>
+            Desarrollé un sistema completo de registro de asistencia con un
+            diseño eficiente y moderno. Este proyecto permite gestionar de
+            manera efectiva la asistencia, con características robustas y una
+            interfaz intuitiva. La implementación utiliza tecnologías como
+            <span>Spring Boot</span> y <span>Angular</span> para lograr un rendimiento
+            óptimo.
+          </p>
+          <a
+            class="btn-view-code"
+            href="https://github.com/RobertoSanchezRamos11/Sistema-de-registro-de-asistencia-frontend"
+            target="_blank">Ver código</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .proyects {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 48px 0;
+  }
+
+  .container {
+    width: 700px;
+    height: 100vh;
+    padding: 16px;
+  }
+
+  .container h2 {
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #ff2e60, #ff381971);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "MADE Soulmaze";
+    font-weight: 500;
+  }
+
+  .container-cards {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .card {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    background-color: #fff;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .card .image {
+    width: 400px;
+    height: auto;
+    background-color: rgb(71, 71, 71);
+    border-radius: 16px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: scale 0.2s ease-in-out;
+  }
+
+  .card .image img {
+    width: 100%;
+    height: 100%;
+    transition: scale 0.3s ease-in-out;
+  }
+  .card .image img:hover {
+    scale: 1.5;
+  }
+
+  .card .text {
+    width: 400px;
+    padding: 8px;
+  }
+
+  .card .text h3 {
+    margin-bottom: 16px;
+  }
+
+  .card .text p {
+    margin-bottom: 24px;
+  }
+
+  .card .text p span {
+    font-weight: bold;
+    background-color: rgb(251, 255, 0);
+  }
+
+  .btn-view-code {
+    padding: 5px 16px;
+    color: #282828;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .btn-view-code:hover {
+    background-color: #0000001a;
+  }
+
+  @media (max-width: 370px) {
+    .proyects {
+      width: 100%;
+      height: 800px;
+    }
+    .container {
+      width: 100%;
+    }
+
+    .container-cards {
+      width: 100%;
+      padding: 0;
+    }
+
+    .card {
+      width: 300px;
+      height: auto;
+      flex-direction: column;
+      border: 1px solid #ececec;
+      box-shadow: 2px 2px 20px 0 #d4d4d4;
+      border-radius: 8px;
+    }
+
+    .card .image {
+      width: 100%;
+    }
+
+    .card .image img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .card .text {
+      width: 100%;
+    }
+  }
+</style>
